@@ -1,0 +1,63 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="yali.hkonnect.net.yalilearns.LessonActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/fab_margin">
+
+        <ImageView
+            android:id="@+id/imageViewPicture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fab_margin_half"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/buttonPlayer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@mipmap/ic_video"
+                android:tint="@color/colorPrimaryDark" />
+
+            <ImageButton
+                android:id="@+id/buttonTranscript"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@mipmap/ic_transcript"
+                android:tint="@color/colorPrimaryDark" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/fab_margin_half"
+            android:paddingRight="@dimen/fab_margin_half" />
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
