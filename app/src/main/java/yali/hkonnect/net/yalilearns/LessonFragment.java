@@ -16,6 +16,7 @@ public class LessonFragment extends Fragment {
     private static final String ARG_TITLE = "title";
     private static final String ARG_LESSON = "lesson";
     private static final String ARG_VIDEO = "video";
+    private static final String ARG_TRANSCRIPT = "transcript";
     private static final String TAG_RESSOURCE_IMAGE = "mipmap";
 
     public LessonFragment newInstance(int sectionNumber, String title) {
@@ -65,7 +66,9 @@ public class LessonFragment extends Fragment {
         buttonTranscript.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(getContext(), TranscriptActivity.class);
+                intent.putExtra(ARG_TRANSCRIPT, lesson.getTranscript());
+                startActivity(intent);
             }
         });
 

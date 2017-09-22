@@ -34,6 +34,7 @@
             android:name=".PlayerActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="nosensor" />
+        <activity android:name=".TranscriptActivity"></activity>
     </application>
 
 </manifest>
