@@ -31,7 +31,7 @@ public class PlayerActivity extends YouTubeBaseActivity implements YouTubePlayer
         if (null == youTubePlayer) return;
 
         if (!wasRestored) {
-       //     youTubePlayer.setFullscreen(true);
+            //     youTubePlayer.setFullscreen(true);
             youTubePlayer.cueVideo(VIDEO_ID);
         }
 

@@ -44,32 +44,32 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
                 android:onClick="goLesson"
                 android:tag="5"
-                android:backgroundTint="@color/colorPrimary"
-                android:textColor="@color/white"
                 android:text="@string/course_mandela_1"
-                android:textAllCaps="false" />
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
                 android:onClick="goLesson"
                 android:tag="4"
-                android:backgroundTint="@color/colorPrimary"
-                android:textColor="@color/white"
                 android:text="@string/course_mandela_2"
-                android:textAllCaps="false" />
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
                 android:onClick="goLesson"
                 android:tag="5"
-                android:backgroundTint="@color/colorPrimary"
-                android:textColor="@color/white"
                 android:text="@string/course_mandela_3"
-                android:textAllCaps="false" />
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
 
         </LinearLayout>
 

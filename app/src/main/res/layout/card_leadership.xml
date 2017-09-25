@@ -44,42 +44,42 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
                 android:onClick="goLesson"
                 android:tag="3"
-                android:backgroundTint="@color/colorPrimary"
-                android:textColor="@color/white"
                 android:text="@string/course_leadership_1"
-                android:textAllCaps="false" />
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
                 android:onClick="goLesson"
                 android:tag="3"
-                android:backgroundTint="@color/colorPrimary"
-                android:textColor="@color/white"
                 android:text="@string/course_leadership_2"
-                android:textAllCaps="false" />
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
                 android:onClick="goLesson"
                 android:tag="3"
-                android:backgroundTint="@color/colorPrimary"
-                android:textColor="@color/white"
                 android:text="@string/course_leadership_3"
-                android:textAllCaps="false" />
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
                 android:onClick="goLesson"
                 android:tag="3"
-                android:backgroundTint="@color/colorPrimary"
-                android:textColor="@color/white"
                 android:text="@string/course_leadership_4"
                 android:textAllCaps="false"
+                android:textColor="@color/white"
                 android:textStyle="normal" />
 
         </LinearLayout>
