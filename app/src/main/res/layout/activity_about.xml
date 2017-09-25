@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="yali.hkonnect.net.yalilearns.TranscriptActivity">
+    tools:context="yali.hkonnect.net.yalilearns.AboutActivity"
+    android:orientation="vertical">
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -12,15 +13,17 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textViewTranscript"
+            android:id="@+id/textViewAbout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingLeft="@dimen/fab_margin"
             android:paddingRight="@dimen/fab_margin"
             android:paddingBottom="@dimen/fab_margin"
-            android:paddingTop="48dp"/>
+            android:paddingTop="48dp"
+            android:text="@string/about"/>
 
     </android.support.v4.widget.NestedScrollView>
+
 
     <ImageButton
         android:layout_width="wrap_content"

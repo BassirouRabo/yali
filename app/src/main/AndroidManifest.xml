@@ -11,9 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
-            android:name=".HomeActivity"
-            android:label="@string/app_name"
+            android:name=".Launch"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,20 +21,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".LessonActivity"
-            android:label="@string/title_activity_lesson"
-            android:parentActivityName=".HomeActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="yali.hkonnect.net.yalilearns.HomeActivity" />
-        </activity>
+
         <activity
             android:name=".PlayerActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="nosensor" />
-        <activity android:name=".TranscriptActivity"></activity>
+
+        <activity
+            android:name=".LessonActivity"
+            android:label="@string/title_activity_lesson"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".TranscriptActivity"
+            android:label="@string/title_activity_transcript" />
+
+        <activity
+            android:name=".CategoryActivity"
+            android:label="@string/title_activity_category"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".AboutActivity"
+            android:label="@string/title_activity_about"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
     </application>
 
 </manifest>

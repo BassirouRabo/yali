@@ -17,7 +17,6 @@ public class LessonFragment extends Fragment {
     private static final String ARG_LESSON = "lesson";
     private static final String ARG_VIDEO = "video";
     private static final String ARG_TRANSCRIPT = "transcript";
-    private static final String TAG_RESSOURCE_IMAGE = "mipmap";
 
     public LessonFragment newInstance(int sectionNumber, String title) {
         LessonFragment fragment = new LessonFragment();
@@ -38,7 +37,6 @@ public class LessonFragment extends Fragment {
 
         TextView textViewTitle = rootView.findViewById(R.id.textViewTitle);
         TextView textViewDescription = rootView.findViewById(R.id.textViewDescription);
-        ImageView imageViewPicture = rootView.findViewById(R.id.imageViewPicture);
         ImageButton buttonPlayer = rootView.findViewById(R.id.buttonPlayer);
         ImageButton buttonTranscript = rootView.findViewById(R.id.buttonTranscript);
 
@@ -48,9 +46,6 @@ public class LessonFragment extends Fragment {
         textViewDescription.setText(lesson.getDescription());
         textViewTitle.setText(lesson.getName());
 
-        int picture = getResources().getIdentifier(lesson.getPicture(), TAG_RESSOURCE_IMAGE, getActivity().getPackageName());
-        if (picture != 0)
-            imageViewPicture.setImageResource(picture);
 
         // Handle click player button
         buttonPlayer.setOnClickListener(new View.OnClickListener() {

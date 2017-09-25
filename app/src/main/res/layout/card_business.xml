@@ -1,53 +1,67 @@
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="@dimen/fab_margin"
-    android:background="@color/white"
-    app:cardElevation="2dp">
+    android:layout_height="match_parent"
+    tools:context="yali.hkonnect.net.yalilearns.CategoryActivity">
 
-    <LinearLayout
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/fab_margin">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:background="@color/white"
+        app:cardElevation="2dp">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/fab_margin_half"
-            android:text="@string/title_business"
-            android:textAlignment="center"
-            android:textColor="@color/colorPrimary"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/fab_margin">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scaleType="center"
-            android:src="@mipmap/img_business" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fab_margin_half"
+                android:text="@string/title_business"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:src="@mipmap/img_business" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="goLesson"
-            android:tag="4"
-            android:text="@string/course_business_1"
-            android:textAllCaps="false" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="goLesson"
-            android:tag="3"
-            android:text="@string/course_business_2"
-            android:textAllCaps="false" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goLesson"
+                android:tag="4"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:text="@string/course_business_1"
+                android:textAllCaps="false" />
 
-    </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goLesson"
+                android:tag="3"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:text="@string/course_business_2"
+                android:textAllCaps="false" />
 
-</android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</android.support.v4.widget.NestedScrollView>
