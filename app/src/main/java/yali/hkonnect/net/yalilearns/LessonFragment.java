@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-
 public class LessonFragment extends Fragment {
     private static final String ARG_SECTION_NUMBER = "tab";
     private static final String ARG_TITLE = "title";

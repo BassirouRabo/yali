@@ -24,8 +24,6 @@ public class LessonActivity extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle(title);
-        //       setSupportActionBar(toolbar);
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         SectionsPagerAdapter mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
 
         ViewPager mViewPager = findViewById(R.id.container);
@@ -46,6 +44,7 @@ public class LessonActivity extends AppCompatActivity {
 
         for (int i = 0; i < length; i++)
             tabLayout.addTab(tabLayout.newTab().setText(tabs[i]));
+        tabLayout.addTab(tabLayout.newTab().setText(getResources().getString(R.string.quiz)));
     }
 
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
@@ -56,12 +55,14 @@ public class LessonActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
-            return new LessonFragment().newInstance(position + 1, title);
+            if (position < length)
+                return new LessonFragment().newInstance(position + 1, title);
+            return new QuizFragment().newInstance("https://yali.state.gov/courses/quiz-pub-sec-service/");
         }
 
         @Override
         public int getCount() {
-            return length;
+            return length + 1;
         }
     }
 }

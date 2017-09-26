@@ -52,4 +52,5 @@
     <string name="about">With hundreds millions of smartphone in Africa, we think bring all the YALI courses into a mobile application could help us to reach the maximum of persons.\n\nBy the way have a big impact in our community.\n\nThis is an initiative of Houssein, a Mandela Washingthon Fellow of 2016.\n\nSharing is caring, please do not hesitate to share this app around you.\n\nIf you encouter any bug or have some feedbacks, you can contact us by sending an email to milameet@gmail.com</string>
     <string name="title_activity_about">About</string>
     <string name="title_activity_transcript">Transcript</string>
+    <string name="quiz">Quiz</string>
 </resources>
